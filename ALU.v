@@ -52,7 +52,7 @@ module ALU(
                 C = A[0]; //  carry
             end
             
-            default: F = 32'b0; // Default case
+            default: F = 32'bx; // Default case
         endcase
         
         Z = (F == 32'b0);
